@@ -40,7 +40,7 @@ public class GenericResourceBundle {
             throw new IllegalArgumentException("Invalid resource bundle name: " + baseName);
         }
 
-        // Only allow English locale for messages bundle
+        // Only allow English locale for messages bundles
         if (!DEFAULT_LANGUAGE.equals(locale.getLanguage())) {
             throw new IllegalArgumentException("Unsupported locale for bundle " + baseName + ": " + locale);
         }
